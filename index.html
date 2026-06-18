@@ -17,31 +17,59 @@
         
         <section class="card content-section">
             <h2>O que são Deepfakes?</h2>
-            <p>Deepfakes são vídeos, áudios ou imagens modificados por meio de Inteligência Artificial para fazer pessoas parecerem dizer ou fazer coisas que nunca fizeram. Essa tecnologia utiliza algoritmos de aprendizado profundo (Deep Learning) e pode ser usada tanto para o entretenimento quanto para espalhar desinformação perigosa.</p>
+            <p>Deepfakes são mídias digitais (vídeos, áudios ou imagens) manipuladas ou criadas do zero por meio de algoritmos de Inteligência Artificial conhecidos como Redes Adversárias Generativas (GANs). Essa tecnologia consegue sobrepor rostos e clonar vozes com extrema precisão, fazendo pessoas parecerem dizer ou fazer coisas que nunca aconteceram.</p>
         </section>
 
         <section class="card content-section">
             <h2>O Impacto na Sociedade</h2>
-            <p>A automação da desinformação mina a confiança nas instituições, na mídia e na própria democracia. Quando não conseguimos distinguir o que é real do que é fabricado, golpes financeiros, difamação de reputações e manipulações eleitorais tornam-se ameaças reais e diárias.</p>
+            <p>A automação da desinformação afeta diversas áreas do nosso cotidiano. Veja abaixo os principais impactos positivos (uso legítimo) e negativos (malicioso):</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Área de Impacto</th>
+                            <th>Uso Positivo / Ético</th>
+                            <th>Risco / Uso Malicioso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Política e Sociedade</strong></td>
+                            <td>Sátiras, paródias claras e reconstruções históricas para fins educativos.</td>
+                            <td>Manipulação de discursos eleitorais e destruição de reputações públicas.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Segurança e Finanças</strong></td>
+                            <td>Dublagem automatizada em escala global para acessibilidade.</td>
+                            <td>Golpes de engenharia social aplicados por telefone (clonagem de voz de parentes).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Entretenimento</strong></td>
+                            <td>Efeitos especiais no cinema (como rejuvenescimento de atores).</td>
+                            <td>Uso não autorizado de imagem de artistas ou criação de conteúdos difamatórios.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <section class="card content-section">
             <h2>Como identificar mídias manipuladas?</h2>
-            <p>Fique atento aos seguintes detalhes visuais e sonoros:</p>
+            <p>Atualmente, as ferramentas de IA ainda deixam rastros biológicos e digitais. Fique atento aos seguintes detalhes:</p>
             <ul>
-                <li><strong>Piscadas de olhos não naturais:</strong> Muitas IAs falham em replicar o piscar normal ou a frequência correta.</li>
-                <li><strong>Falhas nas bordas:</strong> Verifique borrões no contorno do rosto, orelhas, óculos e cabelo.</li>
-                <li><strong>Inconsistência na iluminação:</strong> Sombras e reflexos nos olhos que não batem com o cenário original.</li>
-                <li><strong>Áudio dessincronizado:</strong> O movimento dos lábios não condiz perfeitamente com as sílabas pronunciadas.</li>
+                <li><strong>Anomalias visuais:</strong> Piscadas de olhos irregulares, falta de reflexo natural nas pupilas ou dentes que parecem borrados.</li>
+                <li><strong>Inconsistência de bordas:</strong> Sombras estranhas perto das orelhas, óculos que se misturam com a pele ou cabelos que mudam de formato abruptamente.</li>
+                <li><strong>Desconexão de áudio:</strong> O ritmo da fala ou a respiração do locutor não correspondem ao movimento exato dos lábios.</li>
             </ul>
         </section>
 
         <section class="card tool-section">
             <h2>Simulador de Verificação de Links</h2>
-            <p class="section-instruction">Copiou uma notícia duvidosa? Cole o endereço URL abaixo para analisar os sinais de alerta de desinformação da página:</p>
+            <p class="section-instruction">Recebeu uma notícia bombástica e quer checar? Cole a URL abaixo para verificar possíveis indicadores de fontes duvidosas:</p>
             
             <div class="form-group">
-                <input type="text" id="link-input" placeholder="Ex: https://noticia-duvidosa-da-internet.com/video-polemico">
+                <input type="text" id="link-input" placeholder="Ex: https://portal-noticia-urgente.com/video-vazado">
                 <button id="btn-analyze" class="btn-submit">Analisar Fonte</button>
             </div>
             
@@ -50,20 +78,20 @@
 
         <section class="card quiz-section">
             <h2>Desafio Técnico: Você sabe identificar um Deepfake?</h2>
-            <p class="section-instruction">Responda à pergunta abaixo para testar seus conhecimentos teóricos:</p>
+            <p class="section-instruction">Responda à pergunta para testar sua capacidade de análise:</p>
             
             <form id="quiz-form">
                 <div class="question-container">
-                    <p><strong>Qual das alternativas abaixo é um sinal comum de um vídeo feito por Deepfake?</strong></p>
+                    <p><strong>Qual das alternativas apresenta uma inconsistência típica de um vídeo manipulado por IA?</strong></p>
                     
                     <label class="radio-label">
-                        <input type="radio" name="quiz-answer" value="errada1"> Textura de pele extremamente realista e marcas de expressão naturais.
+                        <input type="radio" name="quiz-answer" value="errada1"> Cicatrizes e marcas de expressão que se movem de forma perfeitamente natural com o rosto.
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="quiz-answer" value="correta"> Movimentos oculares estranhos ou falta de sincronia fina no áudio.
+                        <input type="radio" name="quiz-answer" value="correta"> Falta de sincronia fina nas sílabas pronunciadas ou padrões de piscadas artificiais.
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="quiz-answer" value="errada2"> Iluminação perfeitamente distribuída combinando com o fundo em todos os ângulos.
+                        <input type="radio" name="quiz-answer" value="errada2"> Iluminação constante no ambiente que muda de acordo com os movimentos corporais reais.
                     </label>
                 </div>
                 
