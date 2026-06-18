@@ -3,48 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consciência Digital: Deepfakes e Desinformação</title>
+    <title>Consciência Digital: O Impacto das Deepfakes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="main-header">
         <h1>Cidadania Digital & IA</h1>
-        <p>Entendendo o impacto das Deepfakes na sociedade</p>
-        <button id="btn-acessibilidade">Alternar Modo Escuro</button>
+        <p>Entendendo o impacto das Deepfakes e da Desinformação</p>
     </header>
 
-    <main>
-        <section id="introducao">
+    <main class="container">
+        <section class="card content-section">
             <h2>O que são Deepfakes?</h2>
-            <p>Deepfakes são mídias (vídeos, imagens ou áudios) manipuladas de forma profunda por Inteligência Artificial. Elas podem criar situações realistas, mas completamente falsas, sendo amplamente utilizadas para espalhar desinformação automatizada.</p>
+            <p>Deepfakes são vídeos, áudios ou imagens modificados por meio de Inteligência Artificial para fazer pessoas parecerem dizer ou fazer coisas que nunca fizeram. Essa tecnologia pode ser usada para espalhar desinformação e manipular a opinião pública.</p>
         </section>
 
-        <section id="como-identificar">
+        <section class="card content-section">
             <h2>Como identificar mídias manipuladas?</h2>
             <ul>
-                <li><strong>Piscadas irreais:</strong> Rostos gerados por IA costumam piscar de forma não natural.</li>
-                <li><strong>Inconsistências de luz:</strong> Iluminação confusa no rosto ou reflexos estranhos nos olhos.</li>
-                <li><strong>Áudio dessincronizado:</strong> O movimento dos lábios não bate perfeitamente com o som.</li>
+                <li><strong>Piscadas de olhos não naturais:</strong> Muitas IAs falham em replicar o piscar normal.</li>
+                <li><strong>Falhas nas bordas:</strong> Verifique o contorno do rosto, orelhas e cabelo.</li>
+                <li><strong>Inconsistência na iluminação:</strong> Sombras e reflexos que não batem com o cenário.</li>
+                <li><strong>Áudio dessincronizado:</strong> O movimento dos lábios não condiz perfeitamente com a fala.</li>
             </ul>
         </section>
 
-        <section id="quiz-section">
-            <h2>Teste seus conhecimentos</h2>
-            <form id="quiz-form" onsubmit="return false;">
-                <div class="question">
-                    <p>1. Qualquer vídeo na internet com boa qualidade pode ser considerado 100% confiável?</p>
-                    <label><input type="radio" name="q1" value="errado"> Sim, se a imagem for nítida.</label><br>
-                    <label><input type="radio" name="q1" value="certo"> Não, pois as tecnologias de IA criam vídeos falsos muito realistas.</label>
+        <section class="card quiz-section">
+            <h2>Desafio Técnico: Você sabe identificar um Deepfake?</h2>
+            <p class="quiz-instruction">Responda à pergunta abaixo para testar seus conhecimentos:</p>
+            
+            <form id="quiz-form">
+                <div class="question-container">
+                    <p><strong>Qual das alternativas abaixo é um sinal comum de um vídeo feito por Deepfake?</strong></p>
+                    
+                    <label class="radio-label">
+                        <input type="radio" name="quiz-answer" value="errada1"> Textura de pele extremamente realista e natural.
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="quiz-answer" value="correta"> Movimentos oculares estranhos ou falta de piscadas naturais.
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="quiz-answer" value="errada2"> Iluminação perfeita combinando com o fundo em todos os ângulos.
+                    </label>
                 </div>
-                <button type="button" id="btn-enviar">Verificar Respostas</button>
+                
+                <button type="submit" class="btn-submit">Enviar Resposta</button>
             </form>
-            <div id="resultado-quiz" class="hidden"></div>
+
+            <div id="quiz-result" class="result-box hidden"></div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Projeto de Educação Digital e Computação. Desenvolvido para fins educacionais.</p>
+    <footer class="main-footer">
+        <p>&copy; 2026 - Portal de Conscientização sobre Cidadania Digital. Desenvolvido para fins educacionais.</p>
     </footer>
 
     <script src="script.js"></script>
