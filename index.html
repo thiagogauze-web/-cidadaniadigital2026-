@@ -10,41 +10,60 @@
 
     <header class="main-header">
         <h1>Cidadania Digital & IA</h1>
-        <p>Entendendo o impacto das Deepfakes e da Desinformação</p>
+        <p>Entendendo o impacto das Deepfakes e da Desinformação na Sociedade</p>
     </header>
 
     <main class="container">
+        
         <section class="card content-section">
             <h2>O que são Deepfakes?</h2>
-            <p>Deepfakes são vídeos, áudios ou imagens modificados por meio de Inteligência Artificial para fazer pessoas parecerem dizer ou fazer coisas que nunca fizeram. Essa tecnologia pode ser usada para espalhar desinformação e manipular a opinião pública.</p>
+            <p>Deepfakes são vídeos, áudios ou imagens modificados por meio de Inteligência Artificial para fazer pessoas parecerem dizer ou fazer coisas que nunca fizeram. Essa tecnologia utiliza algoritmos de aprendizado profundo (Deep Learning) e pode ser usada tanto para o entretenimento quanto para espalhar desinformação perigosa.</p>
+        </section>
+
+        <section class="card content-section">
+            <h2>O Impacto na Sociedade</h2>
+            <p>A automação da desinformação mina a confiança nas instituições, na mídia e na própria democracia. Quando não conseguimos distinguir o que é real do que é fabricado, golpes financeiros, difamação de reputações e manipulações eleitorais tornam-se ameaças reais e diárias.</p>
         </section>
 
         <section class="card content-section">
             <h2>Como identificar mídias manipuladas?</h2>
+            <p>Fique atento aos seguintes detalhes visuais e sonoros:</p>
             <ul>
-                <li><strong>Piscadas de olhos não naturais:</strong> Muitas IAs falham em replicar o piscar normal.</li>
-                <li><strong>Falhas nas bordas:</strong> Verifique o contorno do rosto, orelhas e cabelo.</li>
-                <li><strong>Inconsistência na iluminação:</strong> Sombras e reflexos que não batem com o cenário.</li>
-                <li><strong>Áudio dessincronizado:</strong> O movimento dos lábios não condiz perfeitamente com a fala.</li>
+                <li><strong>Piscadas de olhos não naturais:</strong> Muitas IAs falham em replicar o piscar normal ou a frequência correta.</li>
+                <li><strong>Falhas nas bordas:</strong> Verifique borrões no contorno do rosto, orelhas, óculos e cabelo.</li>
+                <li><strong>Inconsistência na iluminação:</strong> Sombras e reflexos nos olhos que não batem com o cenário original.</li>
+                <li><strong>Áudio dessincronizado:</strong> O movimento dos lábios não condiz perfeitamente com as sílabas pronunciadas.</li>
             </ul>
+        </section>
+
+        <section class="card tool-section">
+            <h2>Simulador de Verificação de Links</h2>
+            <p class="section-instruction">Copiou uma notícia duvidosa? Cole o endereço URL abaixo para analisar os sinais de alerta de desinformação da página:</p>
+            
+            <div class="form-group">
+                <input type="text" id="link-input" placeholder="Ex: https://noticia-duvidosa-da-internet.com/video-polemico">
+                <button id="btn-analyze" class="btn-submit">Analisar Fonte</button>
+            </div>
+            
+            <div id="analysis-result" class="result-box hidden"></div>
         </section>
 
         <section class="card quiz-section">
             <h2>Desafio Técnico: Você sabe identificar um Deepfake?</h2>
-            <p class="quiz-instruction">Responda à pergunta abaixo para testar seus conhecimentos:</p>
+            <p class="section-instruction">Responda à pergunta abaixo para testar seus conhecimentos teóricos:</p>
             
             <form id="quiz-form">
                 <div class="question-container">
                     <p><strong>Qual das alternativas abaixo é um sinal comum de um vídeo feito por Deepfake?</strong></p>
                     
                     <label class="radio-label">
-                        <input type="radio" name="quiz-answer" value="errada1"> Textura de pele extremamente realista e natural.
+                        <input type="radio" name="quiz-answer" value="errada1"> Textura de pele extremamente realista e marcas de expressão naturais.
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="quiz-answer" value="correta"> Movimentos oculares estranhos ou falta de piscadas naturais.
+                        <input type="radio" name="quiz-answer" value="correta"> Movimentos oculares estranhos ou falta de sincronia fina no áudio.
                     </label>
                     <label class="radio-label">
-                        <input type="radio" name="quiz-answer" value="errada2"> Iluminação perfeita combinando com o fundo em todos os ângulos.
+                        <input type="radio" name="quiz-answer" value="errada2"> Iluminação perfeitamente distribuída combinando com o fundo em todos os ângulos.
                     </label>
                 </div>
                 
